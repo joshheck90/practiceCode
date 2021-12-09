@@ -10,31 +10,24 @@ cin >> year;
 
 if (year >= 1000 && year <= 9999) {
 
-	if ((year % 4) == 0){
+	if ((year % 4)==0){
 
-		cout << "Divisible by 4, so looking likely. Checking for divisibility by 100... \n";
+		cout << "Divisible by 4, so looking likely. Checking for divisibility by 100 and 400... \n";
 		
-	if (year % 100 == 0) {
-
-		cout << "Uhoh. Divisible by 100. Looking shaky again. Checking for divisibilty by 400, as your last hope... \n";
-
-	if (year % 400 == 0){
-        
-		cout << "Divisible by 400! The rarest form of leap year, you lucky little piglet you! \n";
-      
+		if ( (year % 100 == 0) && !(year % 400 == 0)) {
+			
+			cout << "Uhoh. Divisible by 100, but not by 400... \n";
+			cout << "Bummer dude. This is not a leap year.\n";
+		} else {
+			cout << "Congratulations. You chose a leap year! \n";
+		}
+	
 	} else {
-        
-		cout << "Not divisible by 400. Bummer dude. This is not a leap year.\n";
-	}
-	} else {
-
-		cout << "Not divisible by 100. \nCongratulations, you picked a regular leap year. \n";
-	}
-  	} else {
     		cout << "This is not a leap year. \n";
   	}
 
-	} else {
-    		cout << "You did not enter a valid number!";
-	}
+} else {
+	cout << "You did not enter a valid number! \n";
+}
+
 }
