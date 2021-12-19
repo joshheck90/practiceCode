@@ -1,7 +1,7 @@
 #include <iostream>
- 
+
 int main() {
- 
+
   // The magic starts here
   int gryf =0;
   int huff = 0;
@@ -25,7 +25,7 @@ int main() {
     slyth++;
   } else {std::cout << "Invalid Input. \n"; }
 
-// Question 2  
+// Question 2
   std::cout << "\nQ2) Dawn or Dusk: \n";
   std::cout << " 1) Dawn \n 2) Dusk \n";
   std::cin >> ans2;
@@ -54,8 +54,8 @@ int main() {
   } else {std::cout << "Invalid Input. \n"; }
 
 // Question 4
-  std::cout << "Q4) Which road temps you the most: \n";
-  std::cout << " 1) The wide, sunny, grassy lane \n 2) The narrow, dark, lantern-lit ally \n 3) The twisting, leaf-strewn path through the woods \n 4) The cobbled streed lined with ancient buildings \n";
+  std::cout << "Q4) Which road tempts you the most: \n";
+  std::cout << " 1) The wide, sunny, grassy lane \n 2) The narrow, dark, lantern-lit ally \n 3) The twisting, leaf-strewn path through the woods \n 4) The cobbled street lined with ancient buildings \n";
   std::cin >> ans4;
 
   if (ans4 == 1){
@@ -72,34 +72,25 @@ int max = 0;
 std::string house;
 
 if (gryf > max) {
- 
   max = gryf;
   house = "Gryffindor";
- 
 }
- 
+
 if (huff > max) {
- 
   max = huff;
   house = "Hufflepuff";
- 
 }
- 
+
 if (rave > max) {
- 
   max = rave;
   house = "Ravenclaw";
- 
 }
- 
+
 if (slyth> max) {
- 
   max = slyth;
   house = "Slytherin";
- 
 }
- 
+
 std::cout << house << "!\n";
 
 }
-
