@@ -86,7 +86,7 @@ int main(){
 		case 'A':
 			std::cout << "\n";
 			std::cout << "The Rodent Of Unusual Size lunges forward with incredible speed and rips out your throat! \n";
-			std::cout << "Gurgling blood, you call to the ground and three more ROUS's rush from the underbrush to feast on your still living flesh. \n";
+			std::cout << "Gurgling blood, you fall to the ground and three more ROUS's rush from the underbrush to feast on your still living flesh. \n";
 			std::cout << "Within seconds they have torn you limb from limb, but thankfully, you only felt the first few moments before you lost consciousness and slip into oblivion. \n";
 			std::cout << "You are Dead. There was so much gore. THE END. \n";
 			std::cout << "\n";
